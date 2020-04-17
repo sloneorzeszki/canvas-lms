@@ -31,6 +31,31 @@ GIT
       thrift (~> 0.9.0)
 
 PATH
+  remote: gems/canvas_cassandra
+  specs:
+    canvas_cassandra (0.0.1)
+      cassandra-cql (~> 1.2.2)
+
+PATH
+  remote: gems/i18n_extraction
+  specs:
+    i18n_extraction (0.0.1)
+      activesupport (>= 3.2)
+      i18nliner (~> 0.1)
+      ruby_parser (~> 3.7)
+      sexp_processor (~> 4.14, >= 4.14.1)
+
+PATH
+  remote: gems/i18n_tasks
+  specs:
+    i18n_tasks (0.0.1)
+      activesupport (>= 3.2)
+      i18n (>= 0.7, < 2)
+      i18n_extraction
+      ruby_parser (~> 3.7)
+      utf8_cleaner
+
+PATH
   remote: gems/plugins/academic_benchmark
   specs:
     academic_benchmark (1.1.0)
@@ -69,31 +94,6 @@ PATH
   specs:
     simply_versioned (1.0.0)
       rails (>= 3.2)
-
-PATH
-  remote: gems/canvas_cassandra
-  specs:
-    canvas_cassandra (0.0.1)
-      cassandra-cql (~> 1.2.2)
-
-PATH
-  remote: gems/i18n_extraction
-  specs:
-    i18n_extraction (0.0.1)
-      activesupport (>= 3.2)
-      i18nliner (~> 0.1)
-      ruby_parser (~> 3.7)
-      sexp_processor (~> 4.14, >= 4.14.1)
-
-PATH
-  remote: gems/i18n_tasks
-  specs:
-    i18n_tasks (0.0.1)
-      activesupport (>= 3.2)
-      i18n (>= 0.7, < 2)
-      i18n_extraction
-      ruby_parser (~> 3.7)
-      utf8_cleaner
 
 PATH
   remote: gems/rubocop-canvas
@@ -1032,7 +1032,6 @@ DEPENDENCIES
   spring (= 2.1.0)
   spring-commands-rspec (= 1.0.4)
   sprockets (= 3.7.2)
-  sqlite3 (= 1.4.2)
   statsd-ruby (= 1.4.0)
   stringify_ids!
   switchman (= 1.14.9)

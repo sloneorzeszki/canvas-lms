@@ -153,7 +153,6 @@ path 'gems' do
   gem 'canvas_text_helper'
   gem 'canvas_time'
   gem 'canvas_unzip'
-  gem 'csv_diff'
   gem 'diigo'
   gem 'event_stream'
   gem 'google_drive'

@@ -113,7 +113,7 @@ class AuthenticationProvidersPresenter
   end
 
   def saml_enabled?
-    AuthenticationProvider::SAML.enabled?
+    false
   end
 
   def login_placeholder

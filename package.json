@@ -302,7 +302,7 @@
     "build:watch": "concurrently --raw \"yarn build:css:watch\" \"yarn build:js:watch\"",
     "build:css": "brandable_css",
     "build:css:watch": "brandable_css --watch",
-    "build:js": "yarn run webpack-development",
+    "build:js": "yarn run webpack-production",
     "build:js:watch": "yarn run webpack",
     "build:packages": "yarn workspace-run-serial build:canvas",
     "lint:browser-code": "es-check es8 ./public/dist/**/*.js",
